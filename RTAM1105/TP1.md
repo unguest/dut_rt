@@ -57,7 +57,7 @@ ls -Rt
 ### Afficher les droits des fichiers dans /etc
 
 ```bash
-stat -c "%a %n" *
+stat -c "%a %n" /etc/*
 ```
 
 ### Afficher /etc/passwd
