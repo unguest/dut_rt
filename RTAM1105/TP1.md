@@ -45,12 +45,13 @@ firefox &
 
 ```bash
 cd /var/log
-ls -laR
+ls -R
 ```
 
 ### Lister les fichiers en les triant en fonction de leur date de dernière modification
 
 ```bash
 cd /var/log
-ls -laRt
+ls -Rt
 ```
+
