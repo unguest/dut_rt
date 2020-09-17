@@ -20,6 +20,5 @@ mkdir TP_initiation/Albert/Travail/Cours
 On télécharge le fichier puis on le décompresse: 
 
 ```bash
-wget https://moodle.uvsq.fr/moodle2021/pluginfile.php/26358/mod_folder/content/0/fichiers_TP1.tgz
 tar xvzf fichiers_TP1.tgz
 ```
