@@ -10,11 +10,8 @@ On execute le script [albert.sh](https://github.com/unguest/dut_rt/blob/master/R
 ```bash
 #!/bin/bash
 
-mkdir -p TP_initiation/Albert/Vacances/Photos
-mkdir TP_initiation/Albert/Vacances/Videos
-
-mkdir -p TP_initiation/Albert/Travail/TP
-mkdir TP_initiation/Albert/Travail/Cours
+mkdir -p TP_init/Albert/Vacances/{Photos,Videos}
+mkdir -p TP_initiation/Albert/Travail/{TP, Cours}
 ```
 ## Question 3
 On télécharge le fichier puis on le décompresse: 
