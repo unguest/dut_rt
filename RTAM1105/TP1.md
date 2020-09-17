@@ -134,3 +134,27 @@ cp -r /var/log /tmp/essai
 ```bash
 ls -lR /tmp/essai/log
 ```
+
+### Supprimer les fichiers ayant pour extension .gz dans /tmp/essai/log
+
+```bash
+rm -rf /tmp/essai/log/*.gz
+```
+
+### Dans quel répertoire se trouve ifconfig ?
+
+```bash
+which ifconfig
+```
+
+### Rechercher dans quel(s) répertoire(s) se trouve(nt) le(s) fichier(s) sshd
+
+```bash
+find / 2>/dev/null|grep sshd
+```
+
+### Lister tous les fichiers de /tmp modifiés dans les 15 dernières minutes
+
+```bash
+find /tmp -mmin -15 -type f -exec ls -l {} +
+```
