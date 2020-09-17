@@ -158,3 +158,17 @@ find / 2>/dev/null|grep sshd
 ```bash
 find /tmp -mmin -15 -type f -exec ls -l {} +
 ```
+
+### Trouver tous les groupes auxquels appartien notre utilisateur
+
+```bash
+groups
+```
+
+### Afficher les utilisateurs qui on un shell par défaut en /bin/false
+
+```bash
+cat /etc/passwd|grep "/bin/false"| cut -d ':' -f 1
+```
+
+EOF
