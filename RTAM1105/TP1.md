@@ -69,13 +69,13 @@ less /etc/passwd
 ### Afficher les 3 premières lignes de /etc/passwd
 
 ```bash
-head -n 1 /etc/passwd
+head -n 3 /etc/passwd
 ```
 
 ### Afficher les 3 dernières lignes de /etc/passwd
 
 ```bash
-head -n 1 /etc/passwd
+head -n 3 /etc/passwd
 ```
 
 ### Copier /bin/ls dans /tmp, le renommer 'affiche' puis le tester
