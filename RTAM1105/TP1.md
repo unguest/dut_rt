@@ -54,4 +54,35 @@ ls -R
 cd /var/log
 ls -Rt
 ```
+### Afficher les droits des fichiers dans /etc
 
+```bash
+stat -c "%a %n" *
+```
+
+### Afficher /etc/passwd
+
+```bash
+less /etc/passwd
+```
+
+### Afficher les 3 premières lignes de /etc/passwd
+
+```bash
+head -n 1 /etc/passwd
+```
+
+### Afficher les 3 dernières lignes de /etc/passwd
+
+```bash
+head -n 1 /etc/passwd
+```
+
+### Copier /bin/ls dans /tmp, le renommer 'affiche' puis le tester
+
+```bash
+cp /bin/ls /tmp
+mv /tmp/ls /tmp/affiche
+chmod +x /tmp/affiche
+./tmp/affiche
+```
