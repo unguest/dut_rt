@@ -22,3 +22,23 @@ On télécharge le fichier puis on le décompresse:
 ```bash
 tar xvzf fichiers_TP1.tgz
 ```
+## Question 4
+On execute:
+
+```bash
+firefox &
+```
+
+## Question 5
+
+ ```bash
+ ls /bin > /tmp/resultats.txt
+ ```
+ 
+ ## Question 6
+ On ajoute le contenu de /var/log dans /tmp/resultats.txt puis on affiche le contenu du fichier resultats.txt afin de permettre à l'utilisateur de vérifier que le contenu est bon :
+ 
+ ```bash
+ ls /var/log >> /tmp/resultats.txt
+ less /tmp/resultats.txt
+ ```
