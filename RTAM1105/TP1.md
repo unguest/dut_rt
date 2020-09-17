@@ -86,3 +86,51 @@ mv /tmp/ls /tmp/affiche
 chmod +x /tmp/affiche
 ./tmp/affiche
 ```
+
+### Faire appartenir /tmp/affiche à 'root'
+
+```bash
+sudo chown root:root /tmp/affiche
+```
+
+### Rendre le fichier lisible et executable par 'root' uniquement
+
+```bash
+sudo chmod 500 /tmp/affiche
+```
+
+### Lister le contenu de la racine
+
+```bash
+ls /
+```
+
+### Afficher le nombre de lignes de /etc/passwd
+
+```bash
+wc -l /etc/passwd
+```
+
+### Rechercher un fichier nommé 'messages'
+
+```bash
+find / 2>/dev/null|grep messages
+```
+
+### Créer un répertoire 'essai' dans /tmp
+
+```bash
+mkdir /essai/tmp
+```
+
+### Copier récursivement /var/log dans /tmp/essai
+
+```bash
+cp -r /var/log /tmp/essai
+```
+
+### Afficher récursivement les fichiers dans /tmp/essai/log
+
+```bash
+ls -lR /tmp/essai/log
+```
