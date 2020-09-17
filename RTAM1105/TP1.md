@@ -14,7 +14,7 @@ mkdir -p TP_init/Albert/Vacances/{Photos,Videos}
 mkdir -p TP_initiation/Albert/Travail/{TP, Cours}
 ```
 ## Question 3
-On télécharge le fichier puis on le décompresse: 
+On télécharge le fichier puis on le décompresse avant d'éxecuter le script [trier_albert.sh](https://github.com/unguest/dut_rt/blob/master/RTAM1105/trier_albert.sh): 
 
 ```bash
 tar xvzf fichiers_TP1.tgz
