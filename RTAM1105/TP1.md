@@ -42,3 +42,18 @@ firefox &
  ls /var/log >> /tmp/resultats.txt
  less /tmp/resultats.txt
  ```
+## Questions avancées
+
+### Lister le contenu de /var/log
+
+```bash
+cd /var/log
+ls -laR
+```
+
+### Lister les fichiers en les triant en fonction de leur date de dernière modification
+
+```bash
+cd /var/log
+ls -laRt
+```
