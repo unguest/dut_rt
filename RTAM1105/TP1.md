@@ -5,7 +5,7 @@ Jeudi 17 Septembre 2020
 L'option '-i' sert à demander à l'utilisateur une confirmation avant d'effacer chaque élément.
 
 ## Question 2
-On execute le script suivant [albert.sh](https://github.com/unguest/dut_rt/blob/master/RTAM1105/albert.sh) : 
+On execute le script [albert.sh](https://github.com/unguest/dut_rt/blob/master/RTAM1105/albert.sh) : 
 
 ```bash
 #!/bin/bash
