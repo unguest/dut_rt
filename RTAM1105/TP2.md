@@ -125,11 +125,59 @@ Soit le fichier suivant :
 
 Quel est le résultat de grep monsieur file.txt ? : Il affiche les lignes 1 & 2 car la commande est sensible à la casse donc ignore la ligne 3 & la ligne 5 ne contient pas la chaîne exacte 'monsieur'.
 
-Quel est le résultat de ```bash grep monsieur file.txt|wc -l ``` ? : La commande renvoie 2 car 2 lignes correspondent à la condition imposée à grep.
+Quel est le résultat de ```bash $ grep monsieur file.txt|wc -l ``` ? : La commande renvoie 2 car 2 lignes correspondent à la condition imposée à grep.
 
 
 Quel est le résultat de grep -i monsieur file.txt ? : Il affiche les lignes 1,2 & 3 car la commande est insensible à la casse donc prend en compte la ligne 3 & la ligne 5 ne contient pas la chaîne exacte 'monsieur'.
 
 
 Quel est le résultat de grep -i monsieur file.txt > resultat.txt ? : Rien n'est renvoyé dans le terminal car le flux est redirigé dans le fichier resultat.txt .
+
+## Question 6
+
+Soit le fichier suivant : 
+
+----- telephone.txt -----
+
+Boulez Pierre 456-765
+
+Duruflé Pierre 267-736
+
+Boulanger Nadia 936-645
+
+Cochereau Pierre 738-876
+
+Boulanger Lili 936-074
+
+-----      EOF      -----
+
+Afficher le carnet d'adresse trié par ordre alphabétique des noms :
+
+```bash
+$ cat telephone.txt|sort
+```
+
+Afficher le nombre de personnes dans le répertoire : 
+
+```bash
+$ echo "Nombres de personnes dans le répertoire : $(cat telephone.txt|wc -l)"
+```
+
+Sous FISH : 
+
+```bash
+$ echo "Nombres de personnes dans le répertoire :" (cat telephone.txt|wc -l)
+```
+
+Afficher toutes les lignes concernant les 'Boulanger' : 
+
+```bash
+cat telephone.txt|grep -i boulanger
+```
+
+Afficher toutes les lignes ne concernant pas les 'Boulanger' : 
+
+```bash
+cat telephone.txt|grep -vi boulanger
+```
 
