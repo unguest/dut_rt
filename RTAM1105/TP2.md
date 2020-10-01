@@ -241,3 +241,12 @@ Exemple :
 alias jacques-a-dit='sudo'
 alias jacadi-a-dit='sudo su -'
 ```
+
+## Question 9
+
+Chercher le fichier 'stdio.h' avec 2 commandes différentes : 
+
+```bash
+find / 2>/dev/null|grep "stdio.h"
+du -a / 2>/dev/null|grep "stdio.h"
+```
