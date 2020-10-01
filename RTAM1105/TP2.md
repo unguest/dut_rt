@@ -125,7 +125,7 @@ Soit le fichier suivant :
 
 Quel est le résultat de grep monsieur file.txt ? : Il affiche les lignes 1 & 2 car la commande est sensible à la casse donc ignore la ligne 3 & la ligne 5 ne contient pas la chaîne exacte 'monsieur'.
 
-Quel est le résultat de ```bash $ grep monsieur file.txt|wc -l ``` ? : La commande renvoie 2 car 2 lignes correspondent à la condition imposée à grep.
+Quel est le résultat de ```$ grep monsieur file.txt|wc -l ``` ? : La commande renvoie 2 car 2 lignes correspondent à la condition imposée à grep.
 
 
 Quel est le résultat de grep -i monsieur file.txt ? : Il affiche les lignes 1,2 & 3 car la commande est insensible à la casse donc prend en compte la ligne 3 & la ligne 5 ne contient pas la chaîne exacte 'monsieur'.
@@ -179,5 +179,17 @@ Afficher toutes les lignes ne concernant pas les 'Boulanger' :
 
 ```bash
 cat telephone.txt|grep -vi boulanger
+```
+
+Afficher uniquement les numéros de téléphone : 
+
+```bash
+cat telephone.txt|cut -d ' ' -f 3
+```
+
+Afficher uniquement le numéro de Lili Boulanger (commande insensible à la casse) :
+
+```bash
+cat telephone.txt| grep -i "Boulanger Lili" |cut -d ' ' -f 3
 ```
 
