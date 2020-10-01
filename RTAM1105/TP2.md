@@ -172,25 +172,25 @@ $ echo "Nombres de personnes dans le répertoire :" (cat telephone.txt|wc -l)
 Afficher toutes les lignes concernant les 'Boulanger' : 
 
 ```bash
-grep -i boulanger telephone.txt
+$ grep -i boulanger telephone.txt
 ```
 
 Afficher toutes les lignes ne concernant pas les 'Boulanger' : 
 
 ```bash
-grep -vi boulanger telephone.txt
+$ grep -vi boulanger telephone.txt
 ```
 
 Afficher uniquement les numéros de téléphone : 
 
 ```bash
-cat telephone.txt|cut -f 3
+$ cat telephone.txt|cut -f 3
 ```
 
 Afficher uniquement le numéro de Lili Boulanger (commande insensible à la casse) :
 
 ```bash
-grep -i "Boulanger Lili" telephone.txt |cut -f 3
+$ grep -i "Boulanger Lili" telephone.txt |cut -f 3
 ```
 
 ## Question 7
@@ -198,25 +198,25 @@ grep -i "Boulanger Lili" telephone.txt |cut -f 3
 Afficher la date courante : 
 
 ```bash
-date
+$ date
 ```
 
 Afficher le calendrier du mois courant :
 
 ```bash
-cal
+$ cal
 ```
 
 Afficher le calendrier de septembre 1810 : 
 
 ```bash
-cal 09 1810
+$ cal 09 1810
 ```
 
 Afficher le calendrier de septembre 1752 :
 
 ```bash
-cal 09 1752
+$ cal 09 1752
 ```
 
 ## Question 8
@@ -226,9 +226,9 @@ Ajouter une commande à la fin du fichier .bashrc qui affiche Bonjour <username>
 On edite le fichier avec nano et on ajoute les lignes suivantes :
 
 ```bash
-echo Bonjour $(whoami) !
-echo Nous sommes le $(date|cut -d ' ' -f 1,2,3,4,7)
-echo Bonne journée !
+$ echo Bonjour $(whoami) !
+$ echo Nous sommes le $(date|cut -d ' ' -f 1,2,3,4,7)
+$ echo Bonne journée !
 ```
 
 Expliquez ce qu'est un alias en bash.
@@ -238,8 +238,8 @@ Un alias permet d'executer une ou plusieurs commandes avec un nom spécifié par
 Exemple :
 
 ```bash
-alias jacques-a-dit='sudo'
-alias jacadi-a-dit='sudo su -'
+$ alias jacques-a-dit='sudo'
+$ alias jacadi-a-dit='sudo su -'
 ```
 
 ## Question 9
@@ -247,6 +247,28 @@ alias jacadi-a-dit='sudo su -'
 Chercher le fichier 'stdio.h' avec 2 commandes différentes : 
 
 ```bash
-find / 2>/dev/null|grep "stdio.h"
-du -a / 2>/dev/null|grep "stdio.h"
+$ find / -ls 2>/dev/null|grep "stdio.h"
+$ du -a / 2>/dev/null|grep "stdio.h"
+```
+
+Créer un fichier 'toto.txt' et le rechercher avec les 2 manières choisies précédemment. Quelle solution pourrait être adoptée ?
+
+```bash
+$ touch toto.txt
+$ find / -ls 2>/dev/null|grep "toto.txt"
+$ du -a / 2>/dev/null|grep "toto.txt"
+```
+
+On pourrait créer un alias comme suit afin de simplifier la syntaxe : 
+
+```bash
+alias ffile="du -a / 2>/dev/null|grep" # ffile : Find File
+```
+
+## Question 10
+
+Ecrire une commande qui affiche le nombre de fichiers dans notre répertoire home.
+
+```bash
+find . -type f |wc -l
 ```
