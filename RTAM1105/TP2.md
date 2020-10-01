@@ -272,3 +272,5 @@ Ecrire une commande qui affiche le nombre de fichiers dans notre répertoire hom
 ```bash
 find . -type f |wc -l
 ```
+
+EOF
