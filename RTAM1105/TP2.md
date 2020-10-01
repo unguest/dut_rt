@@ -110,11 +110,17 @@ $ nano new_file # Edition possible du fichier
 Soit le fichier suivant : 
 
 ----- file.txt -----
+
 1- monsieur dupont
+
 2- monsieur durant
+
 3- Monsieur dubois
+
 4- madame martin
+
 5- mon sieur truc
+
 -----    EOF   -----
 
 Quel est le résultat de grep monsieur file.txt ? : Il affiche les lignes 1 & 2 car la commande est sensible à la casse donc ignore la ligne 3 & la ligne 5 ne contient pas la chaîne exacte 'monsieur'.
