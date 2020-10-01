@@ -172,24 +172,72 @@ $ echo "Nombres de personnes dans le répertoire :" (cat telephone.txt|wc -l)
 Afficher toutes les lignes concernant les 'Boulanger' : 
 
 ```bash
-cat telephone.txt|grep -i boulanger
+grep -i boulanger telephone.txt
 ```
 
 Afficher toutes les lignes ne concernant pas les 'Boulanger' : 
 
 ```bash
-cat telephone.txt|grep -vi boulanger
+grep -vi boulanger telephone.txt
 ```
 
 Afficher uniquement les numéros de téléphone : 
 
 ```bash
-cat telephone.txt|cut -d ' ' -f 3
+cat telephone.txt|cut -f 3
 ```
 
 Afficher uniquement le numéro de Lili Boulanger (commande insensible à la casse) :
 
 ```bash
-cat telephone.txt| grep -i "Boulanger Lili" |cut -d ' ' -f 3
+grep -i "Boulanger Lili" telephone.txt |cut -f 3
 ```
 
+## Question 7
+
+Afficher la date courante : 
+
+```bash
+date
+```
+
+Afficher le calendrier du mois courant :
+
+```bash
+cal
+```
+
+Afficher le calendrier de septembre 1810 : 
+
+```bash
+cal 09 1810
+```
+
+Afficher le calendrier de septembre 1752 :
+
+```bash
+cal 09 1752
+```
+
+## Question 8
+
+Ajouter une commande à la fin du fichier .bashrc qui affiche Bonjour <username> ! Nous sommes le <date>. Bonne journée !
+          
+On edite le fichier avec nano et on ajoute les lignes suivantes :
+
+```bash
+echo Bonjour $(whoami) !
+echo Nous sommes le $(date|cut -d ' ' -f 1,2,3,4,7)
+echo Bonne journée !
+```
+
+Expliquez ce qu'est un alias en bash.
+
+Un alias permet d'executer une ou plusieurs commandes avec un nom spécifié par l'utilisateur (d'ou le nom alias).
+
+Exemple :
+
+```bash
+alias jacques-a-dit='sudo'
+alias jacadi-a-dit='sudo su -'
+```
