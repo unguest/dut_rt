@@ -36,9 +36,19 @@ write
 ```
 
 ## Ip Table
-| IP | Equipement|
-|----|------------|
-|172.16.0.1 | router |
-|172.16.0.10 | switch |
-|172.16.0.253 | arthur |
-|172.16.0.2 | samy |
+
+| IP           | Equipement |
+| ------------ | ---------- |
+| 172.16.0.1   | router     |
+| 172.16.0.10  | switch     |
+| 172.16.0.253 | arthur     |
+| 172.16.0.2   | samy       |
+
+## Switch VLAN Config
+
+```config
+enable
+configure terminal
+interface vlan 1
+ip address 172.16.0.1 255.255.0.0
+```
