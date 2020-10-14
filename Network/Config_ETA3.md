@@ -52,3 +52,17 @@ configure terminal
 interface vlan 1
 ip address 172.16.0.1 255.255.0.0
 ```
+## Telnet on switch
+
+(with a very secure password).
+
+```config
+en
+conf t
+line vty 0 4
+login local
+exit
+username cisco password cisco
+write
+reload
+```
