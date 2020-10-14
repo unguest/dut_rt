@@ -4,6 +4,7 @@ Arthur & Samy, the best sys-admins ever.
 
 ## Router configuration :
 
+```config
 enable
 configure terminal
 hostname Etabli3
@@ -32,10 +33,12 @@ access-list 10 permit 172.16.0.0 0.0.255.255
 config-register 0x2102
 exit
 write
+```
 
 ## Ip Table
-
-172.16.0.1 router
-172.16.0.10 switch
-172.16.0.253 arthur
-172.16.0.2 samy
+| IP | Equipement|
+|----|------------|
+|172.16.0.1 | router |
+|172.16.0.10 | switch |
+|172.16.0.253 | arthur |
+|172.16.0.2 | samy |
