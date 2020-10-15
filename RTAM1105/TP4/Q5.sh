@@ -16,7 +16,6 @@ do
 		echo "$file is a directory."
 
 	fi
-	
 
 done
 
