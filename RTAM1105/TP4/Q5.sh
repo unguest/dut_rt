@@ -5,7 +5,7 @@ if [[ $# -lt 1 ]]; then
 	exit 0
 fi
 
-for file in find $(find $1 -type f)
+for file in find $(find $1 -type f 2>/dev/null)
 do
 
 	if [[ -f $file ]]; then
