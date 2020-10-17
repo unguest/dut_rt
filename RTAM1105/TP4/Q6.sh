@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# UNFINISHED SCRIPT
 for arg in "$@"
 do
 
