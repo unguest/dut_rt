@@ -29,11 +29,11 @@ p {
 
 a {
     color: inherit;
-    text-decoration: underline var(--color-custom-red);
+    text-decoration: underline var(--color-custom-red) !important;
 }
 
 a:hover {
-    color: var(--color-custom-red);
+    color: var(--color-custom-red) !important;
 }
 
 .fixed {
