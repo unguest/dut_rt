@@ -1,7 +1,63 @@
+:root {
+    --color-custom-white: #e8e8e8;
+    --color-custom-red : #f05454;
+    --color-custom-blue : #30475e;
+    --color-custom-darkblue : #222831;
+}
+
+body {
+    background-color: var(--color-custom-darkblue);
+}
+
 .fixed {
     position: fixed;
 }
 
+.menu {
+    background-color: var(--color-custom-blue) !important;
+}
+
+.item {
+    background-color : var(--color-custom-blue) !important;
+    text-decoration-color: var(--color-custom-white) !important;
+    color : var(--color-custom-white) !important;
+
+}
+
+.redify:hover {
+    background-color: var(--color-custom-red) !important;
+}
+
+.contact-button {
+    position: fixed;
+    left: 94%;
+    top: 94%;
+    border-radius: 50px !important;
+    color: var(--color-custom-white) !important;
+    background-color: var(--color-custom-red) !important;
+
+}
+
+.container {
+    background-color : var(--color-custom-blue) !important;
+    color : var(--color-custom-white) !important;
+}
+
+.header {
+    color : var(--color-custom-white) !important;
+}
+
+.ui .container .fluid {
+    height: 400px;
+    width: 100%;
+    background-image: url("../img/cpu.jpeg");
+    background-repeat: no-repeat, no-repeat;
+}
+
 footer {
     text-align: center;
+}
+
+.red-footer {
+    color : var(--color-custom-red) !important;
 }
