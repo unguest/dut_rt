@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
 :root {
     --color-custom-white: #e8e8e8;
     --color-custom-red : #f05454;
     --color-custom-blue : #30475e;
     --color-custom-darkblue : #222831;
+}
+
+#header-title{
+    font-family: "Major Mono Display", monospace !important;
 }
 
 body {
@@ -15,11 +21,12 @@ li {
 
 h1, h2 {
     font-size: 3.2rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Major Mono Display", monospace !important;
 }
 
 h3, .page-title {
     font-size: 2.0rem;
+    font-family: "Major Mono Display", monospace !important;
 }
 
 p {
@@ -33,6 +40,7 @@ a[href^="https"] {
 }
 
 a[href^="https"]:hover {
+    text-decoration: none;
     color: var(--color-custom-red) !important;
 }
 
@@ -53,6 +61,16 @@ a[href^="https"]:hover {
 
 .redify:hover {
     background-color: var(--color-custom-red) !important;
+}
+
+.pp {
+    height: 300px;
+    width: 300px;
+    border-radius: 500px;
+}
+
+.header-div {
+    text-align: center;
 }
 
 .contact-button {
@@ -85,4 +103,15 @@ footer {
 .gh-cards {
     margin: auto;
     width: 75%;
+}
+
+#gotop {
+    position: fixed;
+    left: 90%;
+    top: 90%;
+    width: 100px;
+    height: 50px;
+    border: 0;
+    color: var(--color-custom-blue);
+    background-color: var(--color-custom-red);
 }
