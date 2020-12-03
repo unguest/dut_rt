@@ -21,4 +21,4 @@ Dans le sens descendant, les liaisons 2G utilisent la plage de fréquence 925-96
 
 ### Question 3
 
-![](https://i.ibb.co/9nQCSJ6/SIGLENT-GSM-900-2-G.png)
+![](https://i.ibb.co/wNGVJrX/SIGLENT-GSM-900-2-G.jpg)
