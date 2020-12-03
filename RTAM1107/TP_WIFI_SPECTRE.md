@@ -38,3 +38,11 @@ Voici les 12 BTS SFR 900 MHz les plus proches de l'IUT :
 Sur la bande 900 MHz d'Orange, la voie balise avec le plus fort niveau est 936.400 MHz.
 
 ![](https://i.ibb.co/jG2yrZG/SSA-201203232331.png)
+
+### Question 11
+
+Numéro ARFCN relevé (BCCH) : 8
+
+### Question 12
+
+Fréquence pour l'ARFCN 11 : 935 + (0.2 * 8) = 936.6 MHz => cohérent avec le résultat de la question 9.
