@@ -40,8 +40,8 @@ a[href^="https"] {
 }
 
 a[href^="https"]:hover {
-    text-decoration: none;
     color: var(--color-custom-red) !important;
+    text-decoration: none !important;
 }
 
 .fixed {
