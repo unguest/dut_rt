@@ -63,6 +63,20 @@ a[href^="https"]:hover {
     background-color: var(--color-custom-red) !important;
 }
 
+.christmas-tree {
+    position: fixed;
+    left: 5%;
+    top: 40%;
+    z-index: -10;
+}
+
+.christmas-tree-hobbies {
+    position: fixed;
+    left: 0;
+    top: 10%;
+    z-index: -10; 
+}
+
 .pp {
     height: 300px;
     width: 300px;
