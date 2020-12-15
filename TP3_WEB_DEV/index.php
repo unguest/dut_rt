@@ -15,7 +15,7 @@
     </map>
     <img src="home.jpg" usemap="#map" title="map" />
 
-    <form action="/" method="POST">
+    <form action="" method="POST">
 
         <input name="name" id="" placeholder="Name" required>
         <input name="surname" id="" placeholder="Surname" required>
@@ -34,16 +34,22 @@
 
 
     <?php
+
+    if (isset($_POST["name"])) {
+        print "Hej ";
+        print $_POST["name"] ;
+        print " ";
+        print $_POST["surname"];
+        print " !";
+        print "<br><br><hr>";
+        print "Din favoritfärg är ";
+        print $_POST["color"];
+        print "<br>";
+        print "Tack för din kommentar : ";
+        print $_POST["Comment"];
+    }
         
-    print "bonjour monsieur ";
-    print $_POST["name"] ;
-    print " ";
-    print $_POST["surname"];
-    print "<BR><BR><HR>";
-    print " votre couleur favorite est le ";
-    print $_POST["color"];
-    print " Nous avons bien noté vos commentaires, merci de votre visite";
-    print $_POST["Comment"]
+
     
     ?>
 
