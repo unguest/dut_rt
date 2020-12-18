@@ -39,4 +39,5 @@ VLAN par ports
 ## Question 8
 
 2 ème PC Fixe du site 7 : 10.2.7.2/24
+
 4 ème PC WiFi du site 7: 10.2.7.4/24
