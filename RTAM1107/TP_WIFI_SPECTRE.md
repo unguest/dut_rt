@@ -57,8 +57,12 @@ La puissance relevée est donc de -81.27 dBm.
 
 ### Question 2
 
-Le numéro UARFCN relevé est 10762. Les fréquences associées sont donc :
+Le numéro UARFCN relevé est 3075. Les fréquences associées sont donc :
   - 2152.4 MHz pour la bande descendante
   - 1962.4 MHz pour la bande montante
 
+## Question 4
 
+Voici une capture lors d'un test de débit :
+
+![](https://i.ibb.co/xDNp0YP/SSA-201218224430ap.png)
