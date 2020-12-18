@@ -61,8 +61,17 @@ Le numéro UARFCN relevé est 3075. Les fréquences associées sont donc :
   - 2152.4 MHz pour la bande descendante
   - 1962.4 MHz pour la bande montante
 
-## Question 4
+### Question 4
 
 Voici une capture lors d'un test de débit :
 
 ![](https://i.ibb.co/xDNp0YP/SSA-201218224430ap.png)
+
+### Question 5
+
+Cf. Question 4 pour le relevé.
+
+Débit montant : 0.36 Mb/s
+
+Débit descendant : 0.96 Mb/s
+
