@@ -47,8 +47,18 @@ Numéro ARFCN relevé (BCCH) : 8
 
 Fréquence pour l'ARFCN 11 : 935 + (0.2 * 8) = 936.6 MHz => cohérent avec le résultat de la question 9.
 
-## Question 13
+### Question 13
 
 ![](https://i.ibb.co/WVKRRYk/SSA-201218214528ap.png)
 
 La puissance relevée est donc de -81.27 dBm.
+
+## GSM - 3G
+
+### Question 2
+
+Le numéro UARFCN relevé est 10762. Les fréquences associées sont donc :
+  - 2152.4 MHz pour la bande descendante
+  - 1962.4 MHz pour la bande montante
+
+
