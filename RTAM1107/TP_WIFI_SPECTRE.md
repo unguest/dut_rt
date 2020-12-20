@@ -46,3 +46,34 @@ Numéro ARFCN relevé (BCCH) : 8
 ### Question 12
 
 Fréquence pour l'ARFCN 11 : 935 + (0.2 * 8) = 936.6 MHz => cohérent avec le résultat de la question 9.
+
+### Question 13
+
+![](https://i.ibb.co/WVKRRYk/SSA-201218214528ap.png)
+
+La puissance relevée est donc de -81.27 dBm.
+
+## GSM - 3G
+
+### Question 2
+
+Le numéro UARFCN relevé est 3075. Les fréquences associées sont donc :
+  - 2152.4 MHz pour la bande descendante
+  - 1962.4 MHz pour la bande montante
+
+### Questions 4 & 5
+
+Voici une capture lors d'un test de débit :
+
+![](https://i.ibb.co/xDNp0YP/SSA-201218224430ap.png)
+
+Débit montant : 0.36 Mb/s
+
+Débit descendant : 0.96 Mb/s
+
+### Question 6
+
+La trace n'est pas plate comme en débit montant car 
+
+![](https://i.ibb.co/GJXTwbr/SSA-201218230956ap.png)
+![](https://i.ibb.co/LSKXjKD/IMG-20201218-161254.jpg)
