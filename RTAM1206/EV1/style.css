@@ -22,16 +22,6 @@ main {
     text-align: center;
 }
 
-.hobbies-main, .cv-main {
-    margin: auto;
-    text-align: center;
-    width: 60%;
-}
-
-.hobbies-main p {
-    text-align: justify;
-}
-
 ul {
     list-style: none;
 }
@@ -86,7 +76,6 @@ button {
     font-weight: 500;
 }
 
-
 /* Form */
 
 form *{
@@ -108,6 +97,18 @@ footer p {
 }
 
 /* Custom */
+
+/* Hobbies page */
+
+.hobbies-main, .cv-main {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+}
+
+.hobbies-main p {
+    text-align: justify;
+}
 
 /* Titles */
 

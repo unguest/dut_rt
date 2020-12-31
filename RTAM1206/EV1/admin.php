@@ -17,11 +17,12 @@
         <a href="admin.php"><p>Admin</p></a>
     </menu>
 
+
     <main>        
         <h1>Page d'administration</h1>
 
         <p>Normalement, cette page est cachée mais pour les besoins du TP, elle est laissée en accès libre.</p>
-
+        <p>Il faudra penser à bien régler les règles d'affichage des erreurs afin de ne pas déteriorer l'affichage du site lorsqu'il n'y a aucun message.</p>
 
         <?php
 
