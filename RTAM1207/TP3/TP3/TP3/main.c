@@ -61,6 +61,10 @@ void safeIntInput(int *buf, int maxChars) { // In max chars, put +1 according to
 
 
 void arrays(void){
+    /*
+    
+     // Première partie sur les généralités des tableaux
+     
     int lookValue;
     int intArray[20] = {0};
     
@@ -86,5 +90,19 @@ void arrays(void){
     
     if(isPalindromic(array, 8)){
         printf("Le tableau est palindromique.\n");
+     
+    }*/
+    
+    // Deuxième partie sur le tableau contenant les notes
+    
+    int notes[15] = {0};
+    int effectifs[20] = {0};
+    
+    for(int i = 0; i < 15; i++){
+        printf("Note for the %d th student : \n", i + 1);
+        askGrade(notes, i);
+        effectifs[notes[i]]++;
     }
+    printIntArray(notes, 15);
+    printGrades(effectifs, 20);
 }

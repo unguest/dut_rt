@@ -15,7 +15,7 @@ void printIntArray(int *array, int size) {
         printf("[%d] ", *(array + i));
     } // for
     
-    puts("");
+    puts(""); // print a \n
     
 } // printIntArray(int*, int)
 
@@ -56,4 +56,27 @@ bool isPalindromic(int *array, int size) {
         if(*(array + i) != reversedArray[i]) return false;
     }
     return true;
+}
+
+void askGrade(int *array, int index) {
+    int grade;
+    printf("Selctionnez une note entre 1 & 20 : ");
+    safeIntInput(&grade, 3);
+    puts("");
+    
+    while (grade < 0 || grade > 20) {
+        printf("Selctionnez une note entre 1 & 20 : ");
+        safeIntInput(&grade, 3);
+        puts("");
+    }
+    
+    *(array + index) = grade;
+}
+
+void printGrades(int *gradesArray, int size) {
+    for(int i = 0; i < size; i++){
+        if(*(gradesArray + i) != 0) {
+            printf("%d élève(s) ont eu %d\n", *(gradesArray + i), i);
+        }
+    }
 }
