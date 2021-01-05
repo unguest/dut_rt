@@ -55,18 +55,24 @@ void safeIntInput(int *buf, int maxChars) { // In max chars, put +1 according to
     } else {
         puts("Vous n'avez pas entré un nombre; merci de recommencer.");
     }
+    
+    fflush(stdin); // Mandatory to avoid problems...
 } // safeIntInput(int, int)
 
 
 void arrays(void){
     int lookValue;
     int intArray[20] = {0};
-    fillFrom100(intArray, 20);
-    //fillFromUser(intArray, 20);
+    
+    int array[] = {10, 11, 12, 13, 13, 12, 11, 10};
+    int reversedArray[8];
+
     printIntArray(intArray, 20);
     
+    fillFrom100(intArray, 20);
+    fillFromUser(intArray, 20);
+    
     printf("Cherchez une valeur dans le tableau : ");
-    fgetc(stdin); // I don't know why but this is mandatory for the next line to work properly...
     safeIntInput(&lookValue, 12);
     
     if(isInArray(intArray, 20, lookValue))
@@ -74,7 +80,11 @@ void arrays(void){
     else
         printf("%d n'est pas dans le tableau...\n", lookValue);
     
-    int array[] = {10, 11, 12, 13, 13, 12, 11, 10};
+    reverseArray(array, 8, reversedArray);
     
-    puts(isPalindrome(array, 8));
+    printIntArray(reversedArray, 8);
+    
+    if(isPalindromic(array, 8)){
+        printf("Le tableau est palindromique.\n");
+    }
 }

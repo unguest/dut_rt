@@ -12,8 +12,11 @@
 
 void printIntArray(int *array, int size) {
     for (int i = 0; i < size; i++) {
-        printf("Array[%d] : %d\n", i, *(array + i));
+        printf("[%d] ", *(array + i));
     } // for
+    
+    puts("");
+    
 } // printIntArray(int*, int)
 
 void fillFrom100(int *array, int size) {
@@ -39,12 +42,18 @@ bool isInArray(int *array, int size, int value) {
 }
 
 void reverseArray(int *array, int size, int *buf) {
-    
+    int tmp;
+    for(int i = 0; i < size; i++) {
+        tmp = size - i - 1;
+        *(buf + i) = *(array + tmp);
+    }
 }
 
-bool isPalindrome(int *array, int size) {
+bool isPalindromic(int *array, int size) {
+    int reversedArray[size];
+    reverseArray(array, size, reversedArray);
     for(int i = 0; i < size; i++){
-        if(*(array + i) != *(array - i)) return false;
+        if(*(array + i) != reversedArray[i]) return false;
     }
     return true;
 }
