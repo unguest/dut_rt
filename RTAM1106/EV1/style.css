@@ -20,6 +20,9 @@ main {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+
+    /* Used only by animate css lib */
+    --animate-duration: 1.5s;
 }
 
 ul {
@@ -61,6 +64,9 @@ menu a{
     display: inline-block;
     margin-right: 35px;
     font-weight: 700;
+
+    /* Used only by animate css lib */
+    --animate-duration: 1.5s;
 }
 
 /* Buttons */
@@ -114,6 +120,9 @@ footer p {
 
 .website-title {
     font-family: "Major Mono Display", monospace;
+
+    /* Used only by animate css lib */
+    --animate-duration: 2s;
 }
 
 /* Buttons */

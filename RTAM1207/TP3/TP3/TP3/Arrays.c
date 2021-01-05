@@ -38,6 +38,10 @@ bool isInArray(int *array, int size, int value) {
     return false;
 }
 
+void reverseArray(int *array, int size, int *buf) {
+    
+}
+
 bool isPalindrome(int *array, int size) {
     for(int i = 0; i < size; i++){
         if(*(array + i) != *(array - i)) return false;

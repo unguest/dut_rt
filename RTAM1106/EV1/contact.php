@@ -31,7 +31,7 @@
         </form>
 
         <?php
-            if(isset(_POST["name"]) && isset(_POST["surname"]) && isset(_POST["email"]) && isset(_POST["email"]) && isset(_POST["message"])){
+            if(isset($_POST["name"]) && isset($_POST["surname"]) && isset($_POST["email"]) && isset($_POST["email"]) && isset($_POST["message"])){
                 $message = $_POST["name"] . " " . $_POST["surname"] . "  [".$_POST["email"]."] : " . $_POST["message"];
                 echo "<p>$message</p>";
             }
