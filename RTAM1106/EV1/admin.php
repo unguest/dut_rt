@@ -81,7 +81,7 @@
 
     <p>Cette carte n'a aucune autre utilité que celle de remplir les demandes du DM...</p> <br> <br> <br> <br>
     
-    <img src="https://lemouvementassociatif.org/wp-content/uploads/2017/03/CartedefranceDLA.png" usemap="#image-map" alt="Carte Du Lourd Royaume De Bonne Francie.">
+    <img src="img/france.png" usemap="#image-map" alt="Carte Du Lourd Royaume De Bonne Francie.">
 
     <map name="image-map">
         <area target="_blank" alt="Région Hauts de France" title="Région Hauts de France" href="https://www.hautsdefrance.fr" coords="579,9,513,36,499,132,525,225,659,270,714,152,696,103,651,67,623,57" shape="poly">
@@ -98,7 +98,6 @@
         <area target="_blank" alt="Région Auvergne Rhône-Alpes" title="Région Auvergne Rhône-Alpes" href="https://www.auvergnerhonealpes.fr" coords="606,510,561,546,582,591,578,654,548,692,550,726,572,750,614,744,653,716,689,758,709,786,752,788,790,791,825,803,820,775,825,744,864,720,873,696,921,682,941,656,932,615,918,559,901,522,843,560,780,538,752,577,688,569,682,548,661,521" shape="poly">
         <area target="_blank" alt="Région PACA" title="Région PACA" href="https://www.maregionsud.fr" coords="888,700,914,700,941,720,944,745,936,766,1022,786,1004,813,969,869,905,938,828,937,772,925,742,884,761,792,833,810,830,780,824,769,857,732,892,721,896,710,1021,824" shape="poly">
     </map>
-
 
     </main>
 
