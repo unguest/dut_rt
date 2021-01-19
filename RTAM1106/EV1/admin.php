@@ -13,45 +13,6 @@
         <a href="index.html"><p>Home</p></a>
         <a href="cv.html"><p>CV</p></a>
         <a href="hobbies.html"><p>Hobbies</p></a>
-        <a href="contact.php"><p>Contact</p></a>
-        <a href="admin.php"><p>Admin</p></a>
-    </menu>
-
-
-    <main>        
-        <h1>Page d'administration</h1>
-
-        <p>Normalement, cette page est cachée mais pour les besoins du TP, elle est laissée en accès libre.</p>
-        <p>Il faudra penser à bien régler les règles d'affichage des erreurs afin de ne pas déteriorer l'affichage du site lorsqu'il n'y a aucun message.</p>
-
-        <?php
-            /*
-            if ($file = fopen("messages.txt", "r")) {
-                while(!feof($file)) {
-                    $textperline = fgets($file);
-                    echo "<p>$textperline</p>";
-                }
-                fclose($file);
-            } else {
-                echo "<p>Aucun commentaire pour le moment...</p>";
-            }*/
-        ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arthur Pons</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    <div id="particles-js"></div>
-
-    <menu>
-        <a href="index.html"><p>Home</p></a>
-        <a href="cv.html"><p>CV</p></a>
-        <a href="hobbies.html"><p>Hobbies</p></a>
         <a href="contact.html"><p>Contact</p></a>
         <a href="admin.php"><p>Admin</p></a>
     </menu>
@@ -98,15 +59,6 @@
         <area target="_blank" alt="Région Auvergne Rhône-Alpes" title="Région Auvergne Rhône-Alpes" href="https://www.auvergnerhonealpes.fr" coords="606,510,561,546,582,591,578,654,548,692,550,726,572,750,614,744,653,716,689,758,709,786,752,788,790,791,825,803,820,775,825,744,864,720,873,696,921,682,941,656,932,615,918,559,901,522,843,560,780,538,752,577,688,569,682,548,661,521" shape="poly">
         <area target="_blank" alt="Région PACA" title="Région PACA" href="https://www.maregionsud.fr" coords="888,700,914,700,941,720,944,745,936,766,1022,786,1004,813,969,869,905,938,828,937,772,925,742,884,761,792,833,810,830,780,824,769,857,732,892,721,896,710,1021,824" shape="poly">
     </map>
-
-    </main>
-
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-
-</body>
-</html>
-
 
     </main>
 

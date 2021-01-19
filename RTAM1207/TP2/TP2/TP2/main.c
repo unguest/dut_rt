@@ -78,7 +78,7 @@ int max(int count, ...) {
     va_list list;
     int j = 0;
 
-    int max = 0;
+    int max;
     int currentArg;
     
     va_start(list, count);
