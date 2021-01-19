@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/arthur/Documents/GitHub/dut_rt/RTAM1207/TP2/StarPrinter/StarPrinter/main.c
+stdio.h
+-
+
