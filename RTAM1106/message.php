@@ -9,14 +9,13 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-    <menu>
-            <a href="index.html"><p>Home</p></a>
-            <a href="cv.html"><p>CV</p></a>
-            <a href="hobbies.html"><p>Hobbies</p></a>
-            <a href="contact.html"><p>Contact</p></a>
-            <a href="admin.php"><p>Admin</p></a>
-    </menu>
+    <div class="menu">
+        <a href="index.html"><p>Home</p></a>
+        <a href="cv.html"><p>CV</p></a>
+        <a href="hobbies.html"><p>Hobbies</p></a>
+        <a href="contact.php"><p>Contact</p></a>
+        <a href="admin.php"><p>Admin</p></a>
+    </div>
 
 <?php
 
