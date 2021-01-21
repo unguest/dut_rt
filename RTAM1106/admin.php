@@ -9,21 +9,16 @@
 <body>
     <div id="particles-js"></div>
 
-    <menu>
+    <div class="menu">
         <a href="index.html"><p>Home</p></a>
         <a href="cv.html"><p>CV</p></a>
         <a href="hobbies.html"><p>Hobbies</p></a>
-        <a href="contact.html"><p>Contact</p></a>
+        <a href="contact.php"><p>Contact</p></a>
         <a href="admin.php"><p>Admin</p></a>
-    </menu>
+    </div>
 
 
     <main>        
-        <h1>Page d'administration</h1>
-
-        <p>Normalement, cette page est cachée mais pour les besoins du TP, elle est laissée en accès libre.</p>
-        <p>Il faudra penser à bien régler les règles d'affichage des erreurs afin de ne pas déteriorer l'affichage du site lorsqu'il n'y a aucun message.</p>
-
         <?php
 
         /*
@@ -42,7 +37,7 @@
 
     <p>Cette carte n'a aucune autre utilité que celle de remplir les demandes du DM...</p> <br> <br> <br> <br>
     
-    <img src="img/france.png" usemap="#image-map" alt="Carte Du Lourd Royaume De Bonne Francie.">
+    <img class="mapped-img" src="img/france.png" usemap="#image-map" alt="Carte Du Lourd Royaume De Bonne Francie.">
 
     <map name="image-map">
         <area target="_blank" alt="Région Hauts de France" title="Région Hauts de France" href="https://www.hautsdefrance.fr" coords="579,9,513,36,499,132,525,225,659,270,714,152,696,103,651,67,623,57" shape="poly">
