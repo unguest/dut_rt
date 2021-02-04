@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "person.h"
 
 #define INT_MAX_CHARS 12
 #define STR_MAX_LENGTH 256
@@ -15,8 +16,13 @@ void menu(void);
 void safeIntInput(int *buf);
 
 int main(void) {
+    struct Person buffer[256]; // We consider that a agenda can have 256 persons in it max.
+    extractPersons("agenda.csv", buffer);
 
-    menu();
+    for(int i = 0; i < 2; i++) {
+        printf("%s %s %s %s", buffer[i].name, buffer[i].surname, buffer[i].email, buffer[i].phone);
+    }
+
     puts("Au revoir !");
     return 0;
 }
@@ -24,7 +30,7 @@ int main(void) {
 void menu(void) {
     int choice = 0;
     
-    while(choice != 4) {
+    /*while(choice != 4) {
         puts("##### Bienvenue dans votre agenda #####");
         puts("1 - Afficher tous mes contacts");
         puts("2 - Rechercher un contact");
@@ -37,8 +43,9 @@ void menu(void) {
         switch (choice) {
             case 1:
             {
-                FILE *file;
-                file = fopen( "agenda.csv", "r");
+                struct Person buffer[256]; // We consider that a agenda can have 256 persons in it max.
+                extractPersons("agenda.csv", buffer);
+                puts("KARAMBA");
                 break;
             }
                 
@@ -52,7 +59,7 @@ void menu(void) {
             default:
                 break;
         }
-    }
+    } */
 }
 
 void safeIntInput(int *buf) {

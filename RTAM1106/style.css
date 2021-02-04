@@ -87,6 +87,19 @@ button {
 form *{
     text-align: left;
     display: block;
+    margin-bottom: 13px;
+}
+
+input, textarea {
+    background-color: var(--custom-color-blue);
+    border: solid;
+    border-width: 3px;
+    border-color: white;
+    color: var(--custom-color-red);
+}
+
+input:focus, textarea:focus {
+    border-color: var(--custom-color-red);
 }
 
 /* Footer */
@@ -154,6 +167,18 @@ footer p {
     background-color: var(--custom-color-red);
 }
 
+.red-square-button {
+    border-radius: 0;
+    margin-left: 12px;
+    background-color: var(--custom-color-blue);
+    border: 2px var(--custom-color-red) solid;
+}
+
+.red-square-button:hover {
+    background-color: var(--custom-color-red);
+}
+
+
 .blue-button {
     background-color: var(--custom-color-blue);
     border: 2px white solid;
@@ -175,10 +200,10 @@ footer p {
     z-index: -100;
 }
 
-/* IMAGE MAPP2E QUI M'AS PRIS 2H À FAIRE !!!!!!! */
+/* IMAGE MAPPÉE QUI M'AS PRIS 2H À FAIRE !!!!!!! */
 
-.mapped-img{
-    top:30%;
-    z-index: -100;
+.mapped-img {
     position: absolute;
+    margin: auto;
+    top: 75%;
 }
