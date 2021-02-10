@@ -17,28 +17,30 @@ Agenda::Agenda(std::string fileLocation)  : fileLocation(fileLocation) {
 }
 
 void Agenda::extractPersons() {
+    
     std::ifstream file(fileLocation);
     std::string line, tmp, name, surname, phone, email;
-    
-    while (getline (file, line)) {
-        std::vector<std::string> fields;
-        
-        std::cout << line << std::endl;
-        
-        // Do it with sscanf
-        
-        name = fields[0];
-        surname = fields[1];
-        phone = fields[2];
-        email = fields[3];
-        
-        for(std::string str : fields) {
-            std::cout << str << std::endl;
-        }
-        
+
+        std::string line, word;
+        std::string words[4];
+
+
+       while(getline(file, line)) {
+
+       std::string delimiter = ",";
+       int i = 0;
+       size_t pos = 0;
+       std::string token;
+       while ((pos = line.find(delimiter)) != std::string::npos) {
+           token = line.substr(0, pos);
+           if(i < 4) {
+               words[i] = token;
+               i++;
+           }
+           line.erase(0, pos + delimiter.length());
+       }
         this->persons.push_back(Person(name, surname, phone, email));
         fields.clear();
-    }
     
     file.close();
 }

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/arthur/Documents/Documents - MacBook Air de Arthur/GitHub/dut_rt/RTAM1207/TP4/Agenda/Person.h
+iostream
+-
+string
+-
+vector
+-
+fstream
+-
+sstream
+-
+
+/Users/arthur/Documents/Documents - MacBook Air de Arthur/GitHub/dut_rt/RTAM1207/TP4/Agenda/main.cpp
+iostream
+-
+limits
+-
+Person.h
+/Users/arthur/Documents/Documents - MacBook Air de Arthur/GitHub/dut_rt/RTAM1207/TP4/Agenda/Person.h
+
