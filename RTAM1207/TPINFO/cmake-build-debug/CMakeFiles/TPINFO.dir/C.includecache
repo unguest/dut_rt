@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/arthur/Documents/Documents - MacBook Air de Arthur/GitHub/dut_rt/RTAM1207/TPINFO/main.c
+stdio.h
+-
+
