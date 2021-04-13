@@ -25,11 +25,23 @@ Différentes utilisations des modulations PAM :
 	Différentes normes Ethernet utilisent des modulations PAM, de la 100BASE-T4 (100 Mbps, PAM à 3 niveaux) à la IEEE 802.3 (Ethernet 25 Gbps 4 voies, PAM à 5 niveaux) en passant par la 10GBASE-LeT (10 Gpbs, PAM à 16 niveaux).
 
 - Fibre optique
+
 	Les modulations PAM sont utilisées en commication par fibre optique afin de moduler le signal lumineux.
 
 - Télévision
+
 	Le standard 8VSB, qui utilise des modulations PAM, permet un débit utile d'environ 20 Mbps, ce qui est largement plus que le standard précédent : NTSC. Comme son nom l'indique, 8VSB utilise une modulation PAM à 8 niveaux.
 
 - Photobiologie
+
 	Dans l'étude de la photosynthèse, on utilise les modulations PAM afin de transmettre par une antenne les variations de la fluorescence en fonction de la luminosité des membranes thylacoïdiennes des chloroplastes.
 
+### Expression temporelle d'une modulation PAM
+
+![](https://i.ibb.co/3W0KN11/Capture-d-cran-2021-04-13-10-54-02.png)
+
+Ici, Ak représente l'amplitude.
+
+### DSP d'un signal issu d'une modulation PAM
+
+![](https://i.ibb.co/Z83TBMJ/Capture-d-cran-2021-04-13-10-59-39.png)
