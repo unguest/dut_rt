@@ -31,4 +31,5 @@ Différentes utilisations des modulations PAM :
 	Le standard 8VSB, qui utilise des modulations PAM, permet un débit utile d'environ 20 Mbps, ce qui est largement plus que le standard précédent : NTSC. Comme son nom l'indique, 8VSB utilise une modulation PAM à 8 niveaux.
 
 - Photobiologie
-	Dans l'étude de la photosynthèse, on utilise les modulations PAM afin de transmettre par une antenne les variations de la fluorescence des membranes thylacoïdiennes des chloroplastes.
+	Dans l'étude de la photosynthèse, on utilise les modulations PAM afin de transmettre par une antenne les variations de la fluorescence en fonction de la luminosité des membranes thylacoïdiennes des chloroplastes.
+
