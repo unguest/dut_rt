@@ -45,3 +45,17 @@ Ici, Ak représente l'amplitude.
 ### DSP d'un signal issu d'une modulation PAM
 
 ![](https://i.ibb.co/Z83TBMJ/Capture-d-cran-2021-04-13-10-59-39.png)
+
+### Type de signal (cf. PDF)
+
+1 : Binaire
+
+2 : PAM 2 NRZ Bipolaire
+
+3 : PAM 2 RZ Bipolaire
+
+4 : PAM 2 Manchester
+
+5 : PAM 3 AMI
+
+6 : PAM 4 2BQ1
